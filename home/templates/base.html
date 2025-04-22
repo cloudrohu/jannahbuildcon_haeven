@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+{% for rs in header %}
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNJ5VTH2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <title> Tulip Apartments </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- ========== Bootstrap Start ========= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- ========== Bootstrap End ========= -->
+    <!-- ============ Contact Code Start ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-- ========== Font Start ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- ========== Font End ========= -->
+    <!-- ========== lightgallery link css start ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.css" />
+    <!-- ========== lightgallery link End ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- =========== OwlCarousel Start ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- =========== OwlCarousel End ============== -->
+    <!-- =========== Font-awesome Start ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- =========== Font-awesome End ============== -->
+    <!-- =================== Contact Code End ==================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ All Css Start ========== -->
+    <link rel="stylesheet" href="{% static '' %}css/style.css?v=10.9" />
+    <link rel="stylesheet" href="{% static '' %}css/media.css?v=8.3" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNJ5VTH2"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ============ Nav Bar Start =========== -->
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg fixed-nav navbar-light" id="mainNav">
+            <div class="container cantainerstyle">
+                <a class="navbar-brand js-scroll-trigger" href="javascript:;" data-scroll="#Home">
+          <img src=" {{rs.logo.url}} " alt="logo" draggable="false" style="filter: invert(1);"
+            class="img-fluid">
+        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <iconify-icon icon="ion:menu"></iconify-icon>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#Home">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#oveview">Overview</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;"
+                data-scroll="#Highlights">Highlights</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#Amenities">Amenities</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#gallery">Gallery</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;"
+                data-scroll="#Specifications">Hallmarks</a> -->
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#Plans">Plans</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#Location">Location</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#AboutUs">About
+                Us</a> </li>
+
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:;" data-scroll="#Contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="menuenqire d-none d-lg-block">
+                    <a href="javascript:void(0)" class="clickenquiretbn remove-error mx-3 pulse" id="enqirebutton1">Enquire
+            Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>  
+    {% block header %} {% endblock %}
+    {% block body %}{% endblock body %}
+
+    <!-- =============== Contact Us Start =============== -->
+    <section id="Contactus" class="contactus">
+        <div class="containerstyle">
+            <div class="row containerrow mx-0">
+                <div class="col-lg-6 mt-5 d-lg-block d-none">
+                    <h1 class="subheading text-uppercase">
+                        Where We're Located
+                    </h1>
+                    <div class="txsec txsecf">
+                        <h6 class="contactusmedium">Site Address :</h6>
+                        <p>
+                            Wadhwa Wise City, Old Mumbai-Pune Highway, Bhingarwadi, Panvel - 410206.
+                        </p>
+                    </div>
+                    <!-- <div class="txsec">
+            <h6 class="contactusmedium">Email :</h6>
+            <p>
+              <a href="enquiry@thewadhwagroup.com">enquiry@thewadhwagroup.com</a>
+            </p>
+          </div> -->
+                    <!-- <div class="txsec">
+            <h6 class="contactusmedium">Toll Free :</h6>
+            <p>
+              <a href="tel:1800 209 6669">1800 209 6669</a>
+            </p>
+          </div> -->
+                    <div class="txsec">
+                        <div class="row mx-0">
+                            <div class="col-md-1 col-1 px-1">
+                                <img src="{% static '' %}img/wisecityqr.png" alt="" class="img-fluid">
+                            </div>
+                            <!-- <div class="col-md-1 col-1 px-1">
+                <img src="img/qr2.jpg" alt="" class="img-fluid">
+              </div> -->
+                            <div class="col-md-10 col-10 px-1">
+                                <p>MahaRERA Reg. No. P52000016540, P52000016274, P52000016594, P52000016583, P52000016524, P52000016549 & P52000016560 and further details available at maharera.mahaonline.gov.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txsec">
+                        <p class="Disclaimer">
+                            <strong>DISCLAIMER : </strong> The information and material contained in this website pertain to the real estate projects Wise City, South Block Phase I, Plot RZ9 Building 1 Wing D1 | Wise City, South Block Phase I, Plot RZ8
+                            Building 4 Wing F4 | Wise City, South Block Phase I, Plot RZ8 Building 2 Wing B3 | Wise City, South Block Phase I, Plot RZ9 Building 1 Wing D2 | Wise City, South Block Phase I, Plot RZ8 Building 4 Wing F3 | Wise City, South
+                            Block Phase I, Plot Rz8 Building 3 Wing C1 | Wise City, South Block Phase I, Plot RZ8, Building 3 Wing C2 registered with Maharashtra Real Estate Regulatory Authority under Registration No. P52000016540 | P52000016274 | P52000016594
+                            | P52000016583 | P52000016524 | P52000016549 & P52000016560 and is available on the website www.maharera.mahaonline.gov.in. The photographs, images, videos, plans, drawings, sketches, renderings, pictorial and graphical representations,
+                            specifications, illustrations, other information etc. shown are only for indicative purpose and shall not be provided in the apartment. The views, landscape, aerial shots contained in this brochure or any other sales material
+                            are also from typical stock/standard photography.
+                        </p>
+                        <!-- <img src="img/banglow.png" alt=""><img src="img/apartment.png" alt=""> -->
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ">
+                    <form action="thank-you.php" id="FooterForm" method="POST" class="">
+
+                        <p class="heading text-uppercase text-center  d-block d-lg-none">Contact Us</p>
+                        <div class="text-center pt-3 pb-4 d-block d-lg-none">
+                            <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                        </div>
+                        <div class="clientlogo text-center mb-5">
+                            <a href="index.php" target="_blank">
+                <img src=" {{rs.logo.url}} " alt="" class="img-fluid" draggable="false" loading="lazy"
+                  alt="deck view" style="width: 183px; filter: invert(1);">
+              </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 inputfield">
+                                <input type="text" placeholder="Full Name*" name="name">
+                            </div>
+                            <!-- <div class="col-md-6 inputfield">
+                <input type="text" placeholder="Last Name" name="lastname">
+              </div> -->
+                            <div class="col-md-6 inputfield">
+                                <div class="input-group">
+                                    <input type="tel" id="phonepopup" class="form-control mobile" name="mobile" placeholder="Your Contact No.">
+                                    <input type="hidden" name="countrycode" id="countrycode">
+                                </div>
+                            </div>
+                            <div class="col-md-12 inputfield">
+                                <input type="email" placeholder="Email ID*" name="email">
+                            </div>
+                            <div class="col-12 m inputfield">
+                                <textarea id="message" cols="30" rows="4" placeholder="Message" name="comment"></textarea>
+                            </div>
+                            <!-- <div class="col-12">
+                <div class="g-recaptcha" data-sitekey="6LfOw-AqAAAAAE51QSQdg3T6ijSim2eTxSWB7VMB"
+                  data-callback="verifyCaptcha"></div>
+                <label id="g-recaptcha-error" class="errornew"></label>
+              </div> -->
+                            <div style="display:none">
+                                <label for="honeypot">Leave this field blank:</label>
+                                <input type="text" id="honeypot" name="honeypot">
+                            </div>
+                            <div class="col-12 pl-5  inputfield">
+                                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" required="" name="auth" value="" checked>
+                  By clicking on submit you authorize Tulip to get in touch with you over a call, SMS, E-mail, Whatsapp
+                  or any other communication channel.
+                </label>
+                                <br>
+                                <!-- <label class="form-check-label2" for="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" required="" name="consentbox2" value="" checked> I consent to the processing of my personal data according to <a class="disc-click4" href="privacy-policy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> & <a class="disc-click4" href="terms-and-conditions.html" style="color: inherit; text-decoration: underline;">Terms & Conditions</a>
+              </label> -->
+                            </div>
+                            <div class="col-12">
+                                <input type="hidden" name="source" value="Footer Form">
+                                <button type="submit" class="btn" name="submit" id="btn-footer" value="enquiry">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 mb-lg-0 pt-5 d-lg-none d-block">
+                    <h1 class="subheading text-uppercase">
+                        Where We're Located
+                    </h1>
+                    <div class="txsec txsecf">
+                        <h6 class="contactusmedium">Site Address : Wadhwa Wise City, Old Mumbai-Pune Highway, Bhingarwadi, Panvel - 410206
+                        </h6>
+
+                    </div>
+                    <div class="txsec">
+                        <div class="row mx-0">
+                            <div class="col-md-1 col-1 px-1">
+                                <img src="{% static '' %}img/wisecityqr.png" alt="" class="img-fluid">
+                            </div>
+                            <!-- <div class="col-md-1 col-1 px-1">
+                <img src="img/qr2.jpg" alt="" class="img-fluid">
+              </div> -->
+                            <div class="col-md-10 col-10 px-1">
+                                <p>MahaRERA Reg. No. P52000016540, P52000016274, P52000016594, P52000016583, P52000016524, P52000016549 & P52000016560 and further details available at maharera.mahaonline.gov.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txsec">
+                        <p class="Disclaimer">
+                            <strong>DISCLAIMER : </strong>The information and material contained in this website pertain to the real estate projects Wise City, South Block Phase I, Plot RZ9 Building 1 Wing D1 | Wise City, South Block Phase I, Plot RZ8
+                            Building 4 Wing F4 | Wise City, South Block Phase I, Plot RZ8 Building 2 Wing B3 | Wise City, South Block Phase I, Plot RZ9 Building 1 Wing D2 | Wise City, South Block Phase I, Plot RZ8 Building 4 Wing F3 | Wise City, South
+                            Block Phase I, Plot Rz8 Building 3 Wing C1 | Wise City, South Block Phase I, Plot RZ8, Building 3 Wing C2 registered with Maharashtra Real Estate Regulatory Authority under Registration No. P52000016540 | P52000016274 | P52000016594
+                            | P52000016583 | P52000016524 | P52000016549 & P52000016560 and is available on the website www.maharera.mahaonline.gov.in. The photographs, images, videos, plans, drawings, sketches, renderings, pictorial and graphical representations,
+                            specifications, illustrations, other information etc. shown are only for indicative purpose and shall not be provided in the apartment. The views, landscape, aerial shots contained in this brochure or any other sales material
+                            are also from typical stock/standard photography.
+                        </p>
+                        <!-- <img src="img/banglow.png" alt=""><img src="img/apartment.png" alt=""> -->
+
+                    </div>
+
+                    <!-- <button type="submit" class="btn" name="cp-registration" id="cp-registration" data-toggle="modal"href="#CPRegisForm">CP Registration</button> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="containerstyle2">
+                <div class="row p-0 mx-0">
+                    <div class="col-lg-12 mx-auto">
+                        <div class="row">
+                            <div class="col-lg-12 d-none d-lg-block text-center">
+                                <p class="copyright mb-0">Copyrights @ 2025 | Digital Marketing Partner : SSV Technologies<a href="privacy-policy.php" target="_blank">&nbsp;Privacy Policy</a> & <a class="disc-click4" href="terms-and-conditions.php" style="color: inherit; text-decoration: underline;">Terms &
+                    Conditions</a></p>
+                            </div>
+                            <div class="col-lg-6 d-block d-lg-none">
+                                <p class="copyright mb-0">Copyrights @ 2025 | Digital Marketing Partner :<br> SSV Technologies<a href="privacy-policy.php" target="_blank">&nbsp;Privacy Policy</a> & <a class="disc-click4" href="terms-and-conditions.php" target="_blank" style="color: inherit; text-decoration: underline;">Terms & Conditions</a></p>
+                                </p>
+                            </div>
+                            <!-- <div class="col-lg-2 text-md-right icons">
+                <ul class="footer-links d-flex text-md-right">
+                  <li><a href="terms-and-conditions.html" target="_blank">Terms and Conditions&nbsp;</a></li>
+                  <li><a href="privacy-policy.html" target="_blank">|&nbsp;Privacy Policy</a></li>
+                </ul>
+              </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Contact Us End =============== -->
+    <!-- =============== enquieryrap Start =============== -->
+    <div class="enquieryrap">
+        <a href="tel:1800 209 6669" class="iconenqui diff d-lg-none" id="callbtn">
+            <div class="img">
+                <img src="{% static '' %}img/phone.svg" alt="Call Icon" draggable="false" loading="lazy" class="img-fluid">
+                <span>Call Now</span>
+            </div>
+            <div class="txt">
+                <p class="mb-0">Call Now</p>
+            </div>
+        </a>
+        <a href="javascript:;" data-toggle="modal" class="iconenqui clickenquiretbn remove-error diff d-lg-none d-block" id="enquirebtn">
+            <div class="img justify-content-center">
+                <img src="{% static '' %}img/sheet-iconn.png" alt="Enquire Icon" draggable="false" loading="lazy" class="img-fluid">
+                <span>Enquire Now</span>
+            </div>
+            <div class="txt">
+                <p class="mb-0">Enquire Now</p>
+            </div>
+        </a>
+        <!--<a href="javascript:;" data-toggle="modal" id="DownloadBrchuremob"
+      class="iconenqui clickbrochuretbn remove-error diff">
+      <div class="img">
+        <img src="img/download.png" alt="Enquire Icon" draggable="false" loading="lazy" class="img-fluid">
+        <span>Download Brochure</span>
+      </div>
+      <div class="txt">
+        <p class="mb-0">Download Brochure</span></p>
+      </div>
+    </a>-->
+        <div class="sticky-icon  d-none">
+            <a href="javascript:;" data-toggle="modal" class="clickenquiretbn remove-error diff d-lg-block d-none Facebook">
+        <img src="{% static '' %}img/sheet-iconn.png" alt="Whatsapp Icon" draggable="false" loading="lazy" class="img-fluid"
+          style="filter:invert;">
+        <span>Enquire Now</span>
+      </a>
+            <!-- <a target="_blank" href="tel: 1800 209 6669" class="Calling">
+        <img src="img/phone.svg" alt="Whatsapp Icon" draggable="false" loading="lazy" class="img-fluid"
+          style="filter:invert;">
+        <span>Call Now</span>
+      </a> -->
+            <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=1800 209 6669" class="Whatsapp" style="filter:invert;">
+        <img src="img/whatsapp.svg" alt=""> <span>whatsapp</span>
+      </a>-->
+        </div>
+    </div>
+
+    <!-- =============== enquieryrap End =============== -->
+    <!-- =============== Scroll Start =============== -->
+    <a href="#" id="scroll" class="btnshow">
+        <iconify-icon icon="mingcute:up-fill"></iconify-icon>
+    </a>
+    <!-- =============== Scroll End =============== -->
+    <!-- ENQUIRY FORM MODAL-->
+    <div class="modal fade" id="enquiry-form" tabindex="-1" role="dialog" aria-labelledby="enquiry-formTitle" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="row mx-0">
+                    <div class="col-lg-6 p-0">
+                        <div class="img">
+                            <img src="{% static '' %}img/pop.jpg" alt="" class="img-fluid w-100" style=" border: 1.5px solid #c28562;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="con">
+                            <div class="logo text-center">
+                                <img src=" {{rs.logo.url}}" alt="" class="img-fluid" style="filter: invert(1);">
+                            </div>
+                            <h5 class="modal-title headfnt  size24 text-center my-3" id="exampleModalLongTitle">Send Us A Message
+                            </h5>
+                            <form id="EnquierFrm" action="thank-you.php" method="POST">
+                                <div class="row">
+
+                                    <div class="col-12 mb-lg-4 mb-3 labelerrorposition">
+                                        <input type="text" class="w-100" placeholder="Enter Name*" name="name">
+                                        <input type="hidden" placeholder="Enter Name*" name="source" value="Popup Form">
+                                    </div>
+                                    <div class="col-12 mb-lg-4 mb-3 labelerrorposition">
+                                        <input type="email" class="w-100" placeholder="Enter Email ID*" name="email" id="email1">
+                                    </div>
+                                    <div class="col-12 mb-lg-4 mb-3 labelerrorposition">
+                                        <div class="input-group errorlabel">
+                                            <!-- <label class="pb-1">Contact No*</label> -->
+                                            <input type="tel" name="mobile" id="phone" class="form-control mobile" placeholder="Your Contact No.">
+                                            <input type="hidden" name="popupcountrycode" id="popupcountrycode" value="91">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-lg-4 mb-3 labelerrorposition">
+                                        <input type="text" class="w-100" placeholder="Enter Comments" name="comment">
+                                    </div>
+                                    <!-- <div class="col-12">
+                    <div class="g-recaptcha" data-sitekey="6LfOw-AqAAAAAE51QSQdg3T6ijSim2eTxSWB7VMB"
+                      data-callback="verifyCaptcha"></div>
+                    <label id="g-recaptcha-error2" class="errornew"></label>
+                  </div> -->
+                                    <div style="display:none">
+                                        <label for="honeypot">Leave this field blank:</label>
+                                        <input type="text" id="honeypot" name="honeypot">
+                                    </div>
+                                    <div class="col-12 mb-lg-4 mb-3 pl-5">
+                                        <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" required="" name="auth" value="" checked>
+                      By clicking on submit you authorize Tulip to get in touch with you over a call, SMS, E-mail,
+                      Whatsapp or any other communication channel.
+                    </label><br>
+                                        <!-- <label class="form-check-label2" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" required="" name="consentbox2" value="" checked> I consent to the processing of my personal data according to <a class="disc-click4" href="privacy-policy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> & <a class="disc-click4" href="terms-and-conditions.html" style="color: inherit; text-decoration: underline;">Terms & Conditions</a>
+                    </label> -->
+                                    </div>
+                                    <div class="col-12">
+                                        <input name="source" type="hidden" value="Pop Up" id="source" />
+                                        <button type="submit" id="btn-pop" class="w-100 btntest btn" name="submit" value="enquiry">Submit
+                      Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="close custom-close enuiry-close" data-bs-dismiss="modal" aria-label="Close">
+          <iconify-icon icon="ic:baseline-close"></iconify-icon>
+        </button>
+            </div>
+        </div>
+    </div>
+    <!-- ENQUIRY FORM MODAL-->
+    </div>
+    <!-- <div id="lock">
+    Turn Your Device <br />
+    This Website is Best Visible in Portrait Mode
+  </div> -->
+    <!-- =========== Jquery Start ============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- =========== Jquery End ============== -->
+    <!-- =========== Jquery Smooth Scroll Start ============== -->
+    <!-- <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/smooth.js"></script> -->
+    <!-- =========== Jquery Smooth Scroll End ============== i-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- =========== OwlCarousel Start ============== -->
+    <!-- ============ Contact Code Start ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- =========== OwlCarousel End ============== -->
+    <!-- ========== Bootstrap Start ========= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ========== Bootstrap End ========= -->
+    <!-- ========== lightgallery link css start ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+    <!-- ========== lightgallery link End ========== -->
+    <!-- ========== Icons Start ========= -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- ========== Icons End ========= -->
+    <!-- ========== Script Start ============ -->
+    <!-- ========== Count Start ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="{% static '' %}js/jquery.countup.js"></script>
+    <!-- ========== Overview Slider Start ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static '' %}js/script.js?v=1.7"></script>
+    <script src="{% static '' %}js/jquery.validate.js"></script>
+    <script src="{% static '' %}js/vai.js"></script>
+    <script src="{% static '' %}js/custom.js?v=2.2"></script>
+    <script>
+        Delete_Cookie('formfilled');
+    </script>
+    <!-- <script type="text/javascript">
+
+    $(document).ready(function () {
+      history.replaceState(null, "", window.location.pathname);
+    });
+    var recaptcha_response = '';
+
+    function submitUserForm(str) {
+      if (recaptcha_response.length == 0) {
+        document.getElementById(str).innerHTML =
+          '<span style="color:red;">This field is required.</span>';
+        return 0;
+      }
+      return 1;
+    }
+
+    function verifyCaptcha(token) {
+      recaptcha_response = token;
+      document.getElementById('g-recaptcha-error').innerHTML = '';
+    }
+
+    function verifyCaptcha2(token) {
+      recaptcha_response = token;
+      document.getElementById('g-recaptcha-error2').innerHTML = '';
+    }
+  </script> -->
+    <script type="text/javascript">
+        try {
+            let section = document.querySelectorAll("section");
+            let navItem = document.querySelectorAll("header .scroll-top");
+            window.onscroll = () => {
+                section.forEach((e) => {
+                    let top = window.scrollY; //top
+                    let offset = e.offsetTop; // item top
+                    let height = e.offsetHeight; // item height
+                    let id = e.getAttribute("id"); // section id
+                    if (top >= offset - 100 && top < offset + height - 100) {
+                        navItem.forEach((a) => {
+                            a.classList.remove("activeHover");
+                            var query = header.scroll - top[data - scroll = "#${id}"];
+                            document.querySelector(query).classList.add("activeHover");
+                        });
+                        if (history.pushState) {
+                            let newUrl = window.location.pathname + #$ {
+                                id
+                            };
+                            history.replaceState(null, null, newUrl);
+                        }
+                    }
+                });
+            };
+        } catch (error) {}
+        $(".scroll-top").click(function() {
+            var eleScroll = $(this).attr("data-scroll");
+            $("body, html").animate({
+                    scrollTop: $(eleScroll).offset().top - 60
+                }, 700,
+                function() {
+                    // Update URL after scrolling
+                    if (history.pushState) {
+                        let newUrl = window.location.pathname + eleScroll;
+                        history.replaceState(null, null, newUrl);
+                    }
+                }
+            )
+        })
+    </script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <script>
+        // Read More / Read Less Functionality
+        document.getElementById("toggle-btn").addEventListener("click", function() {
+            let hiddenFaqs = document.getElementById("hidden-faqs");
+            if (hiddenFaqs.style.display === "none" || hiddenFaqs.style.display === "") {
+                hiddenFaqs.style.display = "block";
+                this.textContent = "Read Less";
+            } else {
+                hiddenFaqs.style.display = "none";
+                this.textContent = "Read More";
+            }
+        });
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 8000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+    <!-- ========== Count End ============ -->
+    <script>
+        $(window).on("load", function() {
+            $("#enquiry-form").modal("show");
+        })
+        $(".ameniSlider").lightGallery({
+            selector: ".lightgallery",
+        });
+        $(".AmenitiesSlider").lightGallery({
+            selector: ".lightgallery",
+        });
+        $(".ConstructionSlider").lightGallery({
+            selector: ".lightgallery",
+        });
+        // $('.clickenquiretbn').click(function () {
+        //   var pricePopup = $('#enquiry-form');
+        //   pricePopup.modal('show');
+        // });
+        // $('.planenquiry').click(function () {
+        //   var pricePopup = $('#enquiry-form');
+        //   pricePopup.modal('show');
+        // });
+        // $('#DownloadBrchure').click(function () {
+        //   var pricePopup = $('#enquiry-form');
+        //   pricePopup.modal('show');
+        // });
+        // $('#DownloadBrchuremob').click(function () {
+        //   var pricePopup = $('#enquiry-form');
+        //   pricePopup.modal('show');
+        // });
+    </script>
+    <script>
+        $('[data-fancybox="ame"]').fancybox({
+
+            //slide effect- zoom-in-out
+            transitionEffect: "slide",
+            loop: true,
+
+            buttons: [
+                //'slideShow',
+                //'share',
+                'zoom',
+                'fullScreen',
+                'close'
+                //'download'
+            ],
+            thumbs: {
+                autoStart: false
+            }
+        });
+    </script>
+    <!-- =============== Specification Start =============== -->
+    <script>
+        $('.owlspecification').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 0,
+            responsiveClass: true,
+            // smartSpeed: 3000,
+            autoplay: true,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="speciprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="specinextbtn"></iconify-icon>'
+            ],
+            autoplayTimeout: 5000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2,
+                    margin: 10
+                },
+                1000: {
+                    items: 1,
+                    margin: 35,
+                },
+                1500: {
+                    items: 2,
+                    margin: 35,
+                }
+            }
+        });
+    </script>
+    <!-- =============== Specification End =============== -->
+    <!-- =============== Plans Start =============== -->
+    <script>
+        $('.owlplans').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 0,
+            responsiveClass: true,
+            smartSpeed: 1500,
+            autoplay: true,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="plansprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="plansnextbtn"></iconify-icon>'
+            ],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 40
+                },
+                600: {
+                    items: 1,
+                    margin: 10
+                },
+                1000: {
+                    items: 2,
+                    margin: 20,
+                }
+            }
+        });
+    </script>
+    <!-- =============== Plans End =============== -->
+    <!-- =============== Location Start =============== -->
+    <script>
+        $('.owllocation').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 0,
+            responsiveClass: true,
+            // smartSpeed: 1200,
+            smartSpeed: 3000,
+            autoplay: true,
+            // slideTransition: 'linear',
+            autoplayTimeout: 10000,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="locationprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="locationnextbtn"></iconify-icon>'
+            ],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1,
+                    margin: 10
+                },
+                1000: {
+                    items: 2,
+                    margin: 20,
+                }
+            }
+        });
+    </script>
+    <!-- =============== Location End =============== -->
+    <!-- =============== Nav Start =============== -->
+    <script>
+        // ============================= Nav Bar Start ==============================
+        try {
+            let section = document.querySelectorAll("section");
+            let navItem = document.querySelectorAll("header .js-scroll-trigger");
+            window.onscroll = () => {
+                section.forEach((e) => {
+                    let top = window.scrollY; //top
+                    let offset = e.offsetTop; // item top
+                    let height = e.offsetHeight; // item height
+                    let id = e.getAttribute("id"); // section id
+                    if (top >= offset - 200 && top < offset + height - 200) {
+                        navItem.forEach((a) => {
+                            a.classList.remove("active");
+                            var query = `header .js-scroll-trigger[data-scroll="#${id}"]`;
+                            document.querySelector(query).classList.add("active");
+                        });
+                    }
+                });
+            };
+
+        } catch (error) {}
+        $(".js-scroll-trigger").click(function() {
+            var eleScroll = $(this).attr("data-scroll");
+            $("body, html").animate({
+                scrollTop: $(eleScroll).offset().top - 70
+            }, 0)
+        });
+        // ============================= Nav Bar Start ==============================
+    </script>
+    <!-- =============== Nav End =============== -->
+    <!-- <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        if (!$("#scroll").hasClass("active")) {
+          $("#scroll").addClass("active");
+        }
+      } else {
+        if ($("#scroll").hasClass("active")) {
+          $("#scroll").removeClass("active");
+        }
+      }
+    });
+    $('#scroll').click(function () {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    });
+  </script> -->
+    <!-- =============== Contact Code Start =============== -->
+    <script>
+        // AOS.init();
+        Delete_Cookie("formfilled");
+    </script>
+    <script>
+        $('#AmenitiesSlider').owlCarousel({
+            center: true,
+            loop: true,
+            nav: true,
+            items: 5,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="plansprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="plansnextbtn"></iconify-icon>'
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                },
+                990: {
+                    items: 5,
+                }
+            },
+            onInitialized: coverFlowEfx,
+            onTranslate: coverFlowEfx,
+        });
+
+        function coverFlowEfx(e) {
+            if ($('#AmenitiesSlider .owl-dots')) {
+                $('#AmenitiesSlider .owl-dots').remove();
+            }
+            idx = e.item.index;
+            $('#AmenitiesSlider .owl-item.big').removeClass('big');
+            $('#AmenitiesSlider .owl-item.medium').removeClass('medium');
+            $('#AmenitiesSlider .owl-item.mdright').removeClass('mdright');
+            $('#AmenitiesSlider .owl-item.mdleft').removeClass('mdleft');
+            $('#AmenitiesSlider .owl-item.smallRight').removeClass('smallRight');
+            $('#AmenitiesSlider .owl-item.smallLeft').removeClass('smallLeft');
+            $('#AmenitiesSlider .owl-item').eq(idx - 1).addClass('medium mdleft');
+            $('#AmenitiesSlider .owl-item').eq(idx).addClass('big');
+            $('#AmenitiesSlider .owl-item').eq(idx + 1).addClass('medium mdright');
+            $('#AmenitiesSlider .owl-item').eq(idx + 2).addClass('smallRight');
+            $('#AmenitiesSlider .owl-item').eq(idx - 2).addClass('smallLeft');
+        }
+    </script>
+
+    <!-- =================== Construction Update JS ================= -->
+    <script>
+        $('#ConstructionSlider').owlCarousel({
+            center: true,
+            loop: true,
+            nav: true,
+            items: 5,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="plansprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="plansnextbtn"></iconify-icon>'
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                },
+                990: {
+                    items: 3,
+                }
+            },
+            onInitialized: coverFlowEfx,
+            onTranslate: coverFlowEfx,
+        });
+
+        function coverFlowEfx(e) {
+            if ($('#ConstructionSlider .owl-dots')) {
+                $('#ConstructionSlider .owl-dots').remove();
+            }
+            idx = e.item.index;
+            $('#ConstructionSlider .owl-item.big').removeClass('big');
+            $('#ConstructionSlider .owl-item.medium').removeClass('medium');
+            $('#ConstructionSlider .owl-item.mdright').removeClass('mdright');
+            $('#ConstructionSlider .owl-item.mdleft').removeClass('mdleft');
+            $('#ConstructionSlider .owl-item.smallRight').removeClass('smallRight');
+            $('#ConstructionSlider .owl-item.smallLeft').removeClass('smallLeft');
+            $('#ConstructionSlider .owl-item').eq(idx - 1).addClass('medium mdleft');
+            $('#ConstructionSlider .owl-item').eq(idx).addClass('big');
+            $('#ConstructionSlider .owl-item').eq(idx + 1).addClass('medium mdright');
+            $('#ConstructionSlider .owl-item').eq(idx + 2).addClass('smallRight');
+            $('#ConstructionSlider .owl-item').eq(idx - 2).addClass('smallLeft');
+        }
+
+
+        //AOS Initialization
+        AOS.init({
+            //easing: 'ease-in-out-sine'
+            easing: "ease-out-back",
+        });
+
+        let onet1 = 2;
+        let onet2 = 2;
+        // Show popup when scrolling to Gallery section
+        var onetime = 0;
+        $(window).scroll(function() {
+            // Ensure the popup triggers only once during the scroll
+            if ($(window).scrollTop() >= $("#Specifications").position().top - 100 && onetime == 0) {
+                $(".modal").modal("hide"); // Close any other modals if necessary
+                $("#enquiry-form").modal("show"); // Show the enquiry form popup
+                onetime = 1; // Prevents multiple triggers
+            }
+        });
+    </script>
+    <!-- =================== Construction Update JS ================= -->
+    <script>
+        $('#ameniSlider').owlCarousel({
+            center: true,
+            loop: true,
+            nav: true,
+            items: 5,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="plansprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="plansnextbtn"></iconify-icon>'
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                },
+                990: {
+                    items: 3,
+                }
+            },
+            onInitialized: coverFlowEfx,
+            onTranslate: coverFlowEfx,
+        });
+
+        function coverFlowEfx(e) {
+            if ($('#ameniSlider .owl-dots')) {
+                $('#ameniSlider .owl-dots').remove();
+            }
+            idx = e.item.index;
+            $('#ameniSlider .owl-item.big').removeClass('big');
+            $('#ameniSlider .owl-item.medium').removeClass('medium');
+            $('#ameniSlider .owl-item.mdright').removeClass('mdright');
+            $('#ameniSlider .owl-item.mdleft').removeClass('mdleft');
+            $('#ameniSlider .owl-item.smallRight').removeClass('smallRight');
+            $('#ameniSlider .owl-item.smallLeft').removeClass('smallLeft');
+            $('#ameniSlider .owl-item').eq(idx - 1).addClass('medium mdleft');
+            $('#ameniSlider .owl-item').eq(idx).addClass('big');
+            $('#ameniSlider .owl-item').eq(idx + 1).addClass('medium mdright');
+            $('#ameniSlider .owl-item').eq(idx + 2).addClass('smallRight');
+            $('#ameniSlider .owl-item').eq(idx - 2).addClass('smallLeft');
+        }
+
+        const input = document.querySelector("#phonepopup");
+        const countryCodeInput = document.querySelector("#countrycode");
+
+        const iti = window.intlTelInput(input, {
+            initialCountry: "in", // Set default country (e.g., India)
+            separateDialCode: true, // Show the dial code separately
+        });
+
+        // Update hidden input with selected country code
+        input.addEventListener("countrychange", function() {
+            const selectedCode = iti.getSelectedCountryData().dialCode;
+            countryCodeInput.value = selectedCode;
+        });
+
+
+        const phoneInput = document.querySelector("#phone");
+        const countryCodeInput1 = document.querySelector("#popupcountrycode");
+
+        // Initialize the intl-tel-input plugin
+        const iti1 = window.intlTelInput(phoneInput, {
+            initialCountry: "in", // Set default country (e.g., India)
+            separateDialCode: true, // Show the country code separately
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // For number formatting
+        });
+
+        // Update the hidden input when the country changes
+        phoneInput.addEventListener("countrychange", function() {
+            const selectedCountryCode = iti.getSelectedCountryData().dialCode;
+            countryCodeInput.value = selectedCountryCode;
+        });
+    </script>
+    <script>
+        $('#testimonial-slider').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 0,
+            responsiveClass: true,
+            // smartSpeed: 1200,
+            smartSpeed: 3000,
+            autoplay: true,
+            // slideTransition: 'linear',
+            autoplayTimeout: 10000,
+            navText: ['<iconify-icon icon="ph:arrow-left-bold" id="locationprevbtn"></iconify-icon>',
+                '<iconify-icon icon="ph:arrow-right-bold" id="locationnextbtn"></iconify-icon>'
+            ],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2,
+                    margin: 10
+                },
+                1000: {
+                    items: 3,
+                    margin: 20,
+                }
+            }
+        });
+    </script>
+
+   
+
+</body>
+{% endfor %}
+</html>

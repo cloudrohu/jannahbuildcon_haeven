@@ -1,0 +1,787 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- ============ Nav Bar End =========== -->
+    <!-- =============== Slider Start =============== -->
+    <section class="home" id="Home">
+        <div id="hmslidertop" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+
+                    <div class="img">
+                        {% for rs in slider %}
+                        <img src="{{rs.slider.url}}" class="d-lg-block d-none w-100 maining" alt="3bhk flats in kharadi">
+                        <img src="{{rs.slider.url}}" class="d-lg-none d-block w-100 maining" alt="3bhk flats in kharadi">
+                        {% endfor %}
+                        
+                        <!--img src="img/slidernew/wadhwadesk.jpg" class="d-lg-block d-none w-100 maining" alt="3bhk flats in kharadi">
+            <img src="img/slidernew/wadhwamob.jpg" class="d-lg-none d-block w-100 maining" alt="3bhk flats in kharadi" -->
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="arrowslide">
+        <a class="carousel-control-prev" data-bs-target="#hmslidertop" role="button" data-bs-slide="prev"
+          id="slideprevbtn">
+          <iconify-icon icon="ph:arrow-left-bold"></iconify-icon>
+        </a>
+        <a class="carousel-control-next" data-bs-target="#hmslidertop" role="button" data-bs-slide="next"
+          id="slidenextbtn">
+          <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
+        </a>
+      </div> -->
+        </div>
+    </section>
+    <!-- =============== Slider End =============== -->
+    <!-- =============== Highlights Start =============== -->
+    <section id="oveview" class="highlights">
+        <div class="containerstyle">
+            <div class="row m-0">
+                <div class="col-lg-6 text-center pe-lg-5 py-lg-4">
+                    <div class="">
+                        <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Overview</p>
+                        <div class="text-center pt-3 pb-4">
+                            <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                        </div>
+                    </div>
+                    
+                    <div class="{% static '' %}img my-3 d-lg-none d-block" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="{% static '' %}img/about.jpg" alt="3bhk apartments in kharadi" class="img-fluid" style="border: 1.5px solid #000;">
+                    </div>
+           
+                    <p class="textstyle text-center maguspara" data-aos="fade-up" data-aos-duration="3000">
+                        Presenting The Wadhwa Wise City in Panvel, an integrated township project spread across 200+ acres, part of a 450-acre land parcel to be developed by The Wadhwa Group. Wadhwa Wise City is a vision of sustainable growth and holds the distinction of being
+                        the first-ever integrated township project in NAINA (Navi Mumbai Airport Influence Notified Area).
+                        <br> <strong>Choose from Lifestyle Studio, 1, 2 & 3 BHK Homes</strong>
+                    </p>
+
+                    <a href="javascript:;" id="DownloadBrchure" data-toggle="modal" class="btn mt-4">Download E-
+            Brochure</a>
+                </div>
+                <div class="col-lg-6 d-lg-block d-none">
+                    <div class="img">
+                      {% for rs in Oveview %}
+                        <img src="{{rs.overview.url}}" alt="" width="100%" class="img-fluid" style="border: 1.5px solid #000;" data-aos="fade-up" data-aos-duration="3000">
+                        {% endfor %}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Highlights End =============== -->
+    <!-- =============== Highlights End =============== -->
+    <!-- <section class="py-5" id="Highlights">
+    <div class="container">
+      <div class="text-center">
+        <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Project Highlights</p>
+        <div class="text-center pt-3 pb-4">
+          <img src="img/elepeacockgreen.png" class="img-fluid largetitleimg">
+        </div>
+      </div>
+
+
+      <div id="testimonial-slider" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/township.png">
+            </div>
+            <p class="description">
+              200+ acres integrated township planning Master Layout from NAINA.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/elevation.png">
+            </div>
+            <p class="description">
+              Apartments situated at 200 ft <br>above sea level.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/open-space.png">
+            </div>
+            <p class="description">
+              70% open spaces.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/envorment.png">
+            </div>
+            <p class="description">
+              Abundant green areas have been planned to enhance the scenic and beautiful environment.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/mountain.png">
+            </div>
+            <p class="description">
+              The nearest valleys and forests to explore include Prabalmachi Mountain, Wardoli Thakurwadi Waterfall,
+              Prabalgad Fort, Kalavanti Durg Trek, Irshalgad Fort, and Matheran.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/cummunity.png">
+            </div>
+            <p class="description">
+              The apartments within the gated community.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/ventilation.png">
+            </div>
+            <p class="description">
+              Better natural ventilation is one of the key design features.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <div class="Highlights-img">
+              <img src="img/highlighticon/Apartment.png">
+            </div>
+            <p class="description">
+              Tulip Apartments consists of a total of 3,060 Apartments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+    <div class="mainbg">
+        <!-- =============== Amenities Start =============== -->
+        <section id="Amenities" class="amenities">
+            <div class="containerstyle">
+                <div class="text-center">
+                    <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Amenities</p>
+                    <div class="text-center pt-3 pb-4">
+                        <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                    </div>
+                </div>
+            </div>
+            <div class="AmenitiesSlider owl-carousel owl-theme gallery-slider p-0" id="AmenitiesSlider" data-aos="fade-up" data-aos-duration="3000">
+                <div>
+                    <a href="{% static '' %}img/amenities/01.jpg" class="lightgallery">
+            <img src="{% static '' %}img/amenities/small/01.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/amenities/02.jpg" class="lightgallery">
+            <img src="{% static '' %}img/amenities/small/02.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/amenities/03.jpg" class="lightgallery">
+            <img src="{% static '' %}img/amenities/small/03.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/amenities/04.jpg" class="lightgallery">
+            <img src="{% static '' %}img/amenities/small/04.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/amenities/05.jpg" class="lightgallery">
+            <img src="{% static '' %}img/amenities/small/05.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+            </div>
+          </a>
+                </div>
+            </div>
+        </section>
+        <!-- =============== Amenities End =============== -->
+        <!-- Construction Update Start =============== -->
+        <section id="gallery" class="construct">
+            <div class="containerstyle">
+                <div class="text-center">
+                    <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Gallery</p>
+                    <div class="text-center pt-3 pb-4">
+                        <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                    </div>
+                </div>
+            </div>
+            <div class="ConstructionSlider owl-carousel owl-theme gallery-slider p-0" id="ConstructionSlider" data-aos="fade-up" data-aos-duration="3000">
+                <div>
+                    <a href="{% static '' %}img/gallery/01.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/01.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">01 Aug 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/02.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/02.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">07 Nov 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/03.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/03.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">07 Nov 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/04.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/04.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/05.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/05.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/6.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/6.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/07.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/07.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/08.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/08.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/09.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/09.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/10.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/10.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+                <div>
+                    <a href="{% static '' %}img/gallery/11.jpg" class="lightgallery">
+            <img src="{% static '' %}img/gallery/11.jpg" class="img-fluid w-100">
+            <div class="overlay">
+              <img src="{% static '' %}img/zoom1.png" />
+              <!-- <div class="date-overlay">18 Dec 2024</div> -->
+            </div>
+          </a>
+                </div>
+            </div>
+        </section>
+        <!-- Construction Update End ============= -->
+    </div>
+    <!-- =============== Plans Start =============== -->
+    <section id="Plans" class="plans">
+        <div class="containerstyle">
+            <div class="planspadd">
+                <div class="hadtxt text-center">
+                    <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Plans</p>
+                    <div class="text-left pt-3 pb-4">
+                        <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme owlplans" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="item planenquiry" data-id="1" id="planenquiry1">
+                        <div class="{% static '' %}img">
+                            <img src="{% static '' %}img/plans/01.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">TYPICAL
+              FLOOR PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="2" id="planenquiry2">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/02.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="3" id="planenquiry3">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/03.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="4" id="planenquiry4">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/04.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/05.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/06.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/07.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/08.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/09.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/10.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/11.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <div class="item planenquiry" data-id="5" id="planenquiry5">
+                        <div class="img">
+                            <img src="{% static '' %}img/plans/12.jpg" alt="3bhk in kharadi" class="img-fluid">
+                            <!-- <div class="overlay">
+                <div class="ico">
+                  <iconify-icon icon="ic:round-add"></iconify-icon>
+                </div>
+              </div> -->
+                        </div>
+                        <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                    </div>
+                    <!-- <p class="headfnt">UNIT PLAN - EDEN</p> -->
+                </div>
+                <!-- <div class="item planenquiry" data-id="5" id="planenquiry5">
+            <div class="img">
+              <img src="img/plans/06.jpg" alt="3bhk in kharadi" class="img-fluid">
+              <div class="overlay">
+                <div class="ico"><iconify-icon icon="ic:round-add"></iconify-icon></div>
+              </div>
+            </div>
+            <p class="headfnt">UNIT PLAN - EDEN</p>
+          </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- =============== Plans End =============== -->
+    <!-- =============== Locations Start =============== -->
+    <section id="Location" class="location">
+        <div class="container-fluid">
+            <div class="text-center d-none d-lg-block">
+                <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">Location Advantages</p>
+                <div class="text-center pt-3 pb-4">
+                    <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-lg-6 p-0 d-lg-block d-none">
+                    <div class="mobimg mb-5 d-lg-block d-none" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="{% static '' %}img/location01.jpg" alt="property in kharadi" class="img-fluid w-100" style="border: 1.5px solid #fff;">
+                    </div>
+                </div>
+                <div class="col-lg-6 nopa">
+                    <div class="text-center d-block d-lg-none">
+                        <p class="heading text-uppercase" data-aos="fade-up" data-aos-duration="3000">location Advantages</p>
+                        <div class="text-center pt-3 pb-4">
+                            <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                        </div>
+                    </div>
+                    <div class="mobimg mb-5 d-lg-none d-block">
+                        <img src="{% static '' %}img/location01.jpg" alt="property in kharadi" class="img-fluid w-100" style="border: 1.5px solid #fff;">
+                    </div>
+                    <div class="accdataone" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flushoneone">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#flush-oneone" aria-expanded="true" aria-controls="flush-oneone">
+                    Education (15 - 20 Mins)
+                  </button>
+                                </h2>
+                                <div id="flush-oneone" class="accordion-collapse collapse show" aria-labelledby="flushoneone" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bodyimg4">
+                                        <ul>
+                                            <li>St. Wilfred's School</li>
+                                            <li>Delhi Public School</li>
+                                            <li>DAV Public School</li>
+                                            <li>St. Wilfred's College of Arts & Commerce</li>
+                                            <li>Chhatrapati Shivaji Maharaj Institute of Technology</li>
+                                            <li>Amity University</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flushtwotwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-twotwo" aria-expanded="flase" aria-controls="flush-twotwo">
+                    Malls & Adventure (20 - 30 Mins)
+                  </button>
+                                </h2>
+                                <div id="flush-twotwo" class="accordion-collapse collapse" aria-labelledby="flushtwotwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bodyimg1">
+                                        <ul>
+                                            <li>Orion Mall</li>
+                                            <li>K Mall</li>
+                                            <li>Golf Course</li>
+                                            <li>Adlabs Imagica</li>
+                                            <li>Della Adventure Park</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flushthreethree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-threethree" aria-expanded="false" aria-controls="flush-threethree">
+                    Hospitals (10 Mins)
+                  </button>
+                                </h2>
+                                <div id="flush-threethree" class="accordion-collapse collapse" aria-labelledby="flushthreethree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bodyimg2">
+                                        <ul>
+                                            <li>Dhirubhai Ambani Hospital</li>
+                                            <li>MGM Hospital</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flushfourthfourth">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-fourthfourth" aria-expanded="false" aria-controls="flush-fourthfourth">
+                    Connectivity (10 - 15 Mins)
+                  </button>
+                                </h2>
+                                <div id="flush-fourthfourth" class="accordion-collapse collapse" aria-labelledby="flushfourthfourth" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bodyimg2">
+                                        <ul>
+                                            <li>Upcoming Navi Mumbai International Airport</li>
+                                            <li>Mumbai Trans Harbour Link</li>
+                                            <li>Panvel Railway Station</li>
+                                            <li>Mumbai-Pune Expressway</li>
+                                            <li>Mohape Railway Station</li>
+                                            <li>Thombrewadi Bus Stop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Locations End =============== -->
+    <!-- ============= about developer start ============= -->
+    <section id="AboutUs">
+        <div class="py-lg-5 pb-5 px-lg-5 overflow-hidden">
+            <div class="containerstyle">
+                <div class="row">
+                    <div class="text-center">
+                        <p class="heading text-uppercase aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">About Us
+                        </p>
+                        <div class="text-center pt-3 pb-4">
+                            <img src="{% static '' %}img/elepeacockgreen.png" class="img-fluid largetitleimg">
+                        </div>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1 d-flex justify-content-start mb-lg-0 mb-4 pt-5 pt-lg-0 colpadding">
+                        <div class="part1 aboutpara ">
+                            <!-- <div class="col-12">
+                <div class="text-center pt-lg-2 pb-2" data-aos="fade-up" data-aos-duration="3000">
+                  <img src="img/walogo1.png" class="img-fluid largetitleimg">
+                </div>
+              </div> -->
+                            <p class="textstyle text-center pb-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                                The Wadhwa Group carries a rich legacy of 5+ Decades built on the trust and belief of our customers and stakeholders. The group is one of Mumbai’s leading real estate companies with 250+ Landmarks and is currently developing residential, commercial and
+                                township projects spread across approximately 4.1 Million Sq.M. Timely completion of projects coupled with strong planning and design innovation gives the group an edge over its competitors. As an organization, the group
+                                is also known for its employee-friendly and professional working environment. Today, the group’s clientele comprises of over 35,000+ satisfied customers and over 150 + MNCs.
+                            </p>
+
+                            <div class="row aboutuscount text-center justify-content-center py-0">
+                                <div class="col-lg col-6 my-2 boxcard">
+                                    <div class="counterbg">
+                                        <img src="{% static '' %}img/icons/pg01.png" alt="">
+                                        <h1><span class="value counter">5</span><span>+</span></h1>
+                                        <span class="borderbottom">
+                      DECADES OF EXPERIENCE IN ICONIC DEVELOPMENTS</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-6 my-2 boxcard">
+                                    <div class="counterbg">
+                                        <img src="{% static '' %}img/icons/pg02.png" alt="">
+                                        <h1><span class="value counter" data-countto="31" data-duration="8000">4.1</span>
+                                        </h1>
+                                        <span class="borderbottom">
+                      MILLION SQ. M. OF RESIDENTIAL & COMMERCIAL SPACES</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-6 my-2 boxcard">
+                                    <div class="counterbg">
+                                        <img src="{% static '' %}img/icons/pg03.png" alt="">
+                                        <h1><span class="value counter" data-countto="20000" data-duration="8000">35000</span><span>+</span>
+                                        </h1>
+                                        <span class="borderbottom">DELIGHTED CUSTOMERS</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-6 my-2 boxcard">
+                                    <div class="counterbg">
+                                        <img src="{% static '' %}img/icons/pg04.png" alt="">
+                                        <h1><span class="value counter" data-countto="3.34" data-duration="8000">150</span><span>+</span>
+                                        </h1>
+                                        <span class="borderbottom">MNC CLIENTS</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-6 my-2 boxcard">
+                                    <div class="counterbg">
+                                        <img src="{% static '' %}img/icons/pg05.png" alt="">
+                                        <h1><span class="value counter" data-countto="3.34" data-duration="8000">250</span><span>+</span>
+                                        </h1>
+                                        <span class="borderbottom">LANDMARKS CREATED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ============= about developer End ============= -->
+    <!-- <section id="faq" class="overflow-hidden">
+    <div class="container-fluid">
+      <div class="col-lg-12">
+        <div class="faq">
+          <div class="text-center">
+            <p class="heading text-uppercase aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
+              FAQ's
+            </p>
+            <div class="text-center pt-3 pb-4">
+              <img src="img/elepeacockgreen.png" class="img-fluid largetitleimg">
+            </div>
+          </div>
+
+          <div class="row">
+            
+
+            <div class="col-lg-6">
+              <div class="faq-item" data-aos="fade-right">
+                <details>
+                  <summary class="faqq">Wadhwa Wise City is how many feet above Sea Level, and let us know if it is good
+                    enough numbers to show? </summary>
+                  <p class="faqq">(61.00 M) (200 ft) Above Sea Level.</p>
+                </details>
+              </div>
+
+              <div class="faq-item" data-aos="fade-right">
+                <details>
+                  <summary class="faqq">Require Total numbers of inventory of Tulip Apartments?</summary>
+                  <p class="faqq">Tulip – 3060 Apartments. </p>
+                </details>
+              </div>
+
+
+            </div>
+
+           
+            <div class="col-lg-6">
+
+              <div class="faq-item" data-aos="fade-left">
+
+                <details>
+                  <summary class="faqq">What Approvals do we have for the township planning? Do we have any other orders
+                    that differentiate between agricultural and non-agricultural? </summary>
+                  <p class="faqq">200+ integrated township planning Master Layout from NAINA.</p>
+                </details>
+              </div>
+
+              <div class="faq-item" data-aos="fade-left">
+                <details>
+                  <summary class="faqq">Any other valleys or forests nearest to be shown? </summary>
+                  <p class="faqq">Prabalmachi Mountain, Wardoli Thakurwadi Water fall, Prabalgad fort, Kalavanti Durg
+                    trek, Irshalgad fort, Matheran.
+                  </p>
+                </details>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <div id="hidden-faqs" class="hidden-faq">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="faq-item" data-aos="fade-left">
+                  <details>
+                    <summary class="faqq"> What is the % of the Open Spaces? </summary>
+                    <p class="faqq">70%. </p>
+                  </details>
+                </div>
+                <div class="faq-item" data-aos="fade-right">
+                  <details>
+                    <summary class="faqq"> Dedicated Amenities of Tulip Apartments? </summary>
+                    <p class="faqq">Town level Clubhouse, Independent Drop Off, Jogging Track, Play Area for Kids,
+                      Pergola Seating, Outdoor Gym / Health Zone, Multipurpose Court, Basket Ball / Foot Ball,
+                      Amphitheatre, Volleyball Court, Yoga Lawn, Parking zone, Podium Parking, Eco Park, Outdoor
+                      Theatre, Reflexology Path, Multipurpose Lawn, Medical Clinic, Laundry and Market. </p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="faq-item" data-aos="fade-left">
+                  <details>
+                    <summary class="faqq">Other USP or points for Apartments?</summary>
+                    <p class="faqq">Better Natural ventilation is one of the key design features
+                      Abundant green areas have been planned to enhance the already scenic and beautiful environment of
+                      the overall master plan.
+
+                    </p>
+                  </details>
+                </div>
+                <div class="faq-item" data-aos="fade-right">
+                  <details>
+                    <summary class="faqq">Do the Apartments come under a gated community? </summary>
+                    <p class="faqq">Yes.</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="text-center">
+            <button id="toggle-btn" class="read-more-btn">Read More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>-->
+{% endblock body %}

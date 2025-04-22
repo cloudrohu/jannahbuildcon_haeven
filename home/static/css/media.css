@@ -1,0 +1,732 @@
+/*==================== All Large Devices Start=============================*/
+
+@media only screen and (min-width: 991px) {
+    .cantainerstyle {
+        max-width: unset !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        width: 98% !important;
+    }
+    #navbarResponsive {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .maguspara {
+        font-size: 16px !important;
+    }
+    .enquieryrap .iconenqui::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        border: 0.2rem solid #d89049;
+        border-radius: 50%;
+        animation: pulse2 5s ease-out infinite;
+        z-index: -1;
+    }
+    .enquieryrap .iconenqui::before {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        border: 2px solid #d89049;
+        border-radius: 50%;
+        animation: pulse2 5s ease-out infinite;
+        z-index: -1;
+    }
+}
+
+/*==================== All Large Devices End=============================*/
+
+/*==================== Wide Screens Start=============================*/
+
+@media only screen and (min-width: 2500px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    html {
+        font-size: 14px;
+    }
+    .sticky-icon a span {
+        font-size: 1rem;
+    }
+    .aboutdeveloper .containerstyle .counters {
+        margin: -1.31rem 0 0 !important;
+    }
+    .specifications .containerstyle {
+        max-width: 91%;
+        margin-left: auto;
+    }
+    #Amenities {
+        & .owl-carousel {
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                /* width: auto; */
+                height: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                height: 300px;
+                object-fit: cover;
+                -webkit-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
+                -moz-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
+                box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
+            }
+        }
+    }
+}
+
+/*==================== Wide Screens End=============================*/
+
+/*==================== Extra Large Devices=============================*/
+
+@media only screen and (min-width: 1700px) and (max-width: 1900px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+/*==================== Extra Large Devices=============================*/
+
+/*==================== Normal Devices Start=============================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 10px;
+    }
+    .header .navbar-nav .nav-item .nav-link {
+        font-size: 1.2rem;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .subheading {
+        font-size: 1.5rem;
+    }
+    .paratext {
+        font-size: 1.1rem;
+    }
+    #Highlights .icon img {
+        width: 30%;
+    }
+    .iconsboxs p {
+        font-size: 1rem;
+    }
+    #DownloadBrchure {
+        font-size: 1.2rem;
+    }
+    .aboutdeveloper .containerstyle .counters li .headfnt {
+        font-size: 2.5rem;
+    }
+    .aboutdeveloper .containerstyle .overlay p {
+        line-height: 2rem;
+    }
+    .aboutdeveloper .containerstyle .counters li .smatxt {
+        margin-top: -0.4rem;
+    }
+}
+
+/*==================== Normal Devices End=============================*/
+
+/*==================== All Mobile Devices Start=============================*/
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 10px;
+    }
+    .heading {
+        font-size: 3.2rem;
+    }
+    .plans .owlplans .owl-nav {
+        width: unset;
+        align-items: center;
+    }
+    .plans .owlplans .owl-nav .owl-next {
+        margin-left: 1rem;
+    }
+    .specifications .owl-nav {
+        width: unset;
+    }
+    .specifications .owl-nav .owl-next {
+        margin-left: 1rem;
+    }
+    .subheading {
+        font-size: 1.9rem;
+    }
+    .footer .containerstyle2 ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        justify-content: start !important;
+    }
+    .maguspara {
+        font-size: 16px !important;
+    }
+    .aboutpara p {
+        font-size: 13px !important;
+    }
+    /* =====navbar=========== */
+    .navbar {
+        padding: 1rem 0 0;
+    }
+    .navbar .navbar-brand {
+        width: 24%;
+    }
+    .header .navbar-toggler iconify-icon {
+        font-size: 2rem;
+    }
+    .header .navbar-toggler {
+        border: 0.1rem solid #00a88e;
+        color: #00a88e;
+        margin-right: 1.5rem;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        left: 0px;
+        top: 7rem;
+        background: #fff;
+        color: #fff;
+        width: 100%;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        border-bottom: 1px solid #00a88e;
+        padding: 15px 29px;
+    }
+    input:focus,
+    input:hover,
+    textarea:focus,
+    textarea:hover,
+    button:focus,
+    button:hover {
+        outline: 0;
+        box-shadow: unset;
+    }
+    .header .navbar-brand img {
+        /* margin-left: 1.5rem; */
+    }
+    .logodmag {
+        margin-left: -6.5rem;
+    }
+    /* =====navbar=========== */
+    /* =====enquiery=========== */
+    .enquieryrap {
+        display: flex;
+        flex-wrap: wrap;
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        background: #8da37c;
+    }
+    .enquieryrap .iconenqui {
+        width: 50%;
+        max-width: 50%;
+        flex: 33.33%;
+        border-radius: 0;
+        margin: 0;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.5rem 0.8rem;
+        height: 100%;
+        box-shadow: unset;
+        text-decoration: none;
+    }
+    .enquieryrap .iconenqui .img {
+        line-height: normal;
+        margin: 0 auto;
+        display: flex;
+    }
+    #DownloadBrchuremob {
+        display: block;
+    }
+    .enquieryrap .iconenqui .img img {
+        width: 2.4rem;
+        filter: invert(0%) sepia(1%) saturate(36%) hue-rotate(279deg) brightness(101%) contrast(101%);
+    }
+    .enquieryrap .iconenqui .img span {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    /* =====enquiery=========== */
+    /* =====highlights=========== */
+    .highlights {
+        padding: 4rem 0;
+    }
+    .highlights .containerstyle {
+        width: 96%;
+    }
+    #DownloadBrchure {
+        font-size: 1.4rem;
+    }
+    /* =====highlights=========== */
+    /* =====amenities=========== */
+    .amenities {
+        padding: 4rem 0;
+    }
+    .amenities .nav-tabs {
+        padding: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 1.6rem;
+    }
+    .amenities .nav-tabs .nav-item {
+        max-width: 33.33%;
+        margin: 0 !important;
+        flex: 0 0 33.33%;
+    }
+    .amenities .nav-tabs .nav-item .nav-link {
+        padding: 0.7rem 0.5rem;
+    }
+    .amenities .nav-tabs .nav-item .tabhead1 {
+        font-size: 1.7rem;
+    }
+    .amenities .nav-tabs .nav-item .tabsubhead1 {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .amenities .amenitiesbox {
+        max-width: 94%;
+        margin: auto !important;
+    }
+    .amenities .amenitiesimg {
+        padding-right: 0%;
+    }
+    .amenities .amenitiesimg .overlaypath {
+        height: 11rem;
+        padding: 0 1.5rem;
+        position: unset;
+        width: unset;
+        justify-content: unset;
+    }
+    .amenities .amenitiesimg .overlaypath .amenhead {
+        font-size: 2rem;
+        text-align: left;
+    }
+    /* =====amenities=========== */
+    /* =====specifications=========== */
+    .specifications .containerstyle {
+        max-width: 95%;
+        margin: auto;
+    }
+    .specifications {
+        padding: 0 0 4rem;
+    }
+    /* =====specifications=========== */
+    /* =====plan=========== */
+    .plans {
+        padding: 4rem 0;
+    }
+    .plans .containerstyle {
+        max-width: 94%;
+        margin: auto;
+    }
+    .plans .planspadd {
+        padding-left: unset;
+    }
+    .plans .owlplans .headfnt {
+        font-size: 1.8rem;
+    }
+    /* =====plan=========== */
+    /* =====location=========== */
+    .location {
+        padding: 4rem 0;
+    }
+    .location .containerstyle {
+        max-width: 94%;
+        margin: auto;
+    }
+    .location .plaleft {
+        padding-left: 0rem;
+    }
+    .nopa {
+        padding: 0;
+    }
+    .location .mobimg {
+        margin: 0;
+    }
+    /* =====location=========== */
+    /* =====aboutdeveloper=========== */
+    .aboutdeveloper .containerstyle {
+        max-width: 94%;
+        margin: 0 auto !important;
+    }
+    .aboutdeveloper .containerstyle .overlay {
+        position: unset;
+        width: 100%;
+        padding: 4rem 0.1rem;
+    }
+    .aboutdeveloper .containerstyle .counters li .headfnt {
+        font-size: 3.6rem;
+    }
+    .aboutdeveloper .containerstyle .counters li {
+        text-align: center;
+    }
+    /* =====aboutdeveloper=========== */
+    /* =====contactus=========== */
+    .contactus .copyright {
+        padding: 0.7rem 0;
+    }
+    .contactus .footer-linkss {
+        padding: 0.7rem 0;
+    }
+    .contactus .icons p {
+        padding: 0.7rem 0;
+    }
+    .contactus {
+        padding-bottom: 3rem;
+    }
+    .contactus .containerrow {
+        margin-top: 0.8rem;
+    }
+    .contactus .containerstyle {
+        padding: 0 1rem 0rem;
+    }
+    .footer .containerstyle2 .icons p {
+        justify-content: start;
+    }
+    /* =====contactus=========== */
+    .enquieryrap .iconenqui::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        border: none;
+        border-radius: 50%;
+        animation: unset;
+        z-index: -1;
+    }
+    .enquieryrap .iconenqui::before {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        border: none;
+        border-radius: 50%;
+        animation: unset;
+        z-index: -1;
+    }
+    #scroll {
+        bottom: 60px !important;
+    }
+    .labelerrorposition {
+        margin-bottom: 18px !important;
+    }
+    .home .arrowslide {
+        width: unset;
+        position: absolute;
+        z-index: 1;
+        bottom: 50%;
+        left: 5%;
+        right: 5%;
+    }
+    .headcolor .heading {
+        background: #fff;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .aboutdeveloper .heading {
+        background: #000;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+/*==================== All Mobile Devices End=============================*/
+
+/*==================== Tablet Devices Start=============================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/*==================== Tablet Devices End=============================*/
+
+/*==================== Middle Mobile Devices Start=============================*/
+
+@media only screen and (max-width: 767px) {}
+
+/*==================== Middle Mobile Devices End=============================*/
+
+/*==================== Middle Mobile Devices Start=============================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    html {
+        font-size: 11px;
+    }
+    #Amenities .owl-carousel {
+        img {
+            width: 80% !important;
+            position: relative !important;
+            height: 100% !important;
+        }
+    }
+    #Amenities {
+        & .owl-carousel {
+            & .owl-item {
+                @media (max-width: 380px) {
+                    height: unset !important;
+                }
+            }
+        }
+    }
+}
+
+/*==================== Middle Mobile Devices End=============================*/
+
+/*==================== Small Mobile Devices Start=============================*/
+
+@media only screen and (max-width: 480px) {
+    .overlay {
+        background-color: transparent !important;
+    }
+    #Amenities .owl-item {
+        height: unset !important;
+    }
+    #Amenities .owl-carousel {
+        img {
+            width: 80% !important;
+            position: relative !important;
+            height: 100% !important;
+        }
+        .overlay img {
+            height: unset !important;
+            width: 30px !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+        }
+    }
+    #Amenities {
+        & .owl-carousel {
+            & .owl-item {
+                @media (max-width: 380px) {
+                    height: unset !important;
+                }
+            }
+        }
+    }
+}
+
+/*==================== Small Mobile Devices End=============================*/
+
+/*==================== Very Small Mobile Devices Start=============================*/
+
+@media only screen and (max-width: 320px) {}
+
+/*==================== Very Small Mobile Devices End=============================*/
+
+/* =========== Lock Start ================ */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    #lock {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 34px;
+    }
+    .wrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    #lock {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+/* =========== Lock End ================ */
